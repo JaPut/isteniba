@@ -21,7 +21,10 @@
         <!-- Kas notiek -->
     </div>
     <div class="mainmessage">
-        <p class="spin2">Kas notiek</p>
+        <p class="spin2">Pasaulē ir realitāte un cilvēki meklē informatīvus medeļus, lai to
+            aprakstītu. Ja modelis dod vairāk vai mazāk paredzamu rezultātu, rodas patiesība.
+            No tās jau var dabūt arī kādu praktisku labumu.
+        </p>
     </div>
     <div class="mainmessage">
         <p class="spin2">Kas notiek</p>
