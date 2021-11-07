@@ -56,6 +56,8 @@ body {
   position: fixed;
   margin-left: 20%;
   bottom: 0;
+  clip-path: ellipse(108vh 2vw at 85px 10px);
+  border-radius: 10px;
 }
 
 .container {
@@ -90,7 +92,10 @@ body {
   display: block;
   height: 100vh;
   width: auto;
-  background: linear-gradient(90deg, rgb(255, 238, 192), rgb(235, 134, 40));
+  background-image: url(../img/gradient_to_left_latin_big.png);
+  background-size:     cover;                   
+  background-repeat:   no-repeat;
+  background-position: center; 
   background-repeat: no-repeat;
   position: relative;
   padding-top: 1%;
@@ -108,22 +113,22 @@ body {
 .question {
   color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 4vh;
+  font-size: 3.5vh;
   font-weight: 1000;
   position: absolute;
-  top: 23vh;
+  top: 29vh;
   left: 38vw; 
 }
 
 .quote {
   color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 4vh;
+  font-size: 4.5vh;
   font-weight: 1000;
   text-shadow: 0.5px 0.1px rgb(203, 9, 252);
   text-transform: uppercase;
   position: absolute;
-  top: 12vh;
+  top: 20vh;
   left: 30vw;
   background-image: linear-gradient(45deg, #f3bd48, #f18d3b);
   border-radius: 5px;
@@ -136,16 +141,17 @@ body {
 .title {
   color: black;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 3vh;
+  font-size: 5vh;
   font-weight: 700;
   text-shadow: 0.8px 0.5px rgb(227, 252, 9);
   position: absolute;
   top: 2vh;
-  left: 45vw;
+  left: 30vw;
   border-radius: 5px;
   line-height: 1.5;
   width: auto;
   display: table;
+  text-align: center;
 }
 
 .poga1 {
@@ -203,235 +209,6 @@ body {
   }
 }
 
-/* needs */
-
-.needs {
-  display: block;
-  min-height: 100vh;
-  height: auto;
-  width: auto;
-  background-image: url(../img/gradient_to_right_latin_big.png);
-  background-size:     cover;                   
-  background-repeat:   no-repeat;
-  background-position: center; 
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 5vh;
-  padding-top:35vh;
-  margin: 10px;
-  opacity: 0.95;
-}
-
-#needsr {
-  display: none;
-}
-
-#needsf {
-  display: none;
-}
-
-/* sponsors */
-
-.spon {
-  display: block;
-  min-height: 100vh;
-  height: auto;
-  width: auto;
-  background-image: url(../img/gradient_to_left_latin_big.png);
-  background-size: cover;                   
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  padding: 5vh;
-  padding-top:35vh;
-  margin: 10px;
-  opacity: 0.95;
-}
-
-.spon h1, .needs h1 {
-  text-align: right;
-  padding-right: 45%;
-  font-size: 4.5vh;
-  font-weight: 700;
-}
-
-.spon .button, .needs .button {
-  display: inline-block;
-  margin: 0 auto;
-  font-size: 2.5vh;
-  font-weight: 700;
-  color: rgb(87, 87, 87);
-  background-color: rgb(248, 248, 148);
-  border-radius: 5px;
-  width: auto;
-  font-family: 'Times New Roman', Times, serif;
-  cursor: pointer;
-  float: left;
-  
-}
-
-.spon1 {
-  display: inline-block;
-  border: solid;
-  border-color: rgb(18, 15, 22);
-  background: #FFF6E7;
-  color: #3a3636;
-  font-weight: 700;
-  padding: 20px;
-  text-decoration: none;
-  box-shadow: 10px 15px 40px -10px rgba(#e886ad);
-  font-size: 5vh;
-  border-radius: 10px;
-  transform-origin: top right;
-  transform: skewY(-1deg);
-  perspective: 1500px;
-  float: left;
-  width: 45%;
-  text-align: center;
-  z-index: 999;
-}
-
-.spon2 {
-  display: inline-block;
-  border: solid;
-  border-color: rgb(18, 15, 22);
-  background:#DFE0DF;
-  color: #3a3636;
-  font-weight: 700;
-  padding: 20px;
-  text-decoration: none;
-  box-shadow: 10px 20px 40px -10px rgba(#c2dd71);
-  font-size: 4vh;
-  border-radius: 10px;
-  transform-origin: top left;
-  transform: skewY(1deg);
-  float: right;
-  width: 45%;
-  text-align: center;
-}
-
-.spon button:focus, .needs button:focus {
-  color: darkblue;
-  background-color: rgb(199, 211, 33);
-  font-weight: 900;
-  letter-spacing: 3px;
-  cursor: pointer;
- }
-
-.spon button:hover, .needs button:hover {
-  cursor: pointer;
-  box-shadow:  0px 2px 5px 1px rgba(155, 155, 155, .5);
- }
-
-.spong {
-  color: darkgreen;
-  font-size: 3.5vh;
-  font-weight: 700;
-  margin-top: 20vh;
-  text-align: left;
-  padding-left: 2%;
-}
-
-#spong {
-  display: none;
-}
-
-#sponk {
-  display: none;
-}
-
-.spongline {
-  display: inline-block;
-  background: #91D4B0;
-  color: #2e1f1f;
-  font-weight: 700;
-  padding: 20px;
-  text-decoration: none;
-  font-size: 4vh;
-  border-radius: 10px;
-  transform-origin: top left;
-  width: 46%;
-  text-align: center;
-  margin: 1%;
-}
-
-.spongline:hover{
-  box-shadow:  0px 2px 5px 1px rgba(155, 155, 155, .5);
-  text-decoration: none;
-  color:#000000;
-}
-
-@media (max-width: 768px) {
-  
-}
-
-/* what I do */
-.whatdo {
-  display: inline-block;
-  min-height: 100vh;
-  width: auto;
-  background: linear-gradient(90deg, rgb(235, 134, 40), rgb(236, 189, 145));
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 1vw;
-  margin: 10px;
-  opacity: 95%;
-} 
-
-.whatdo p {
-  color: darkgreen;
-  text-align: left;
-  font-size: 2.5vh;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-}
-
-.whatdo h3 {
-  color: darkgreen;
-  text-align: center;
-  padding-top: 1vh;
-  font-size: 4.5vh;
-  font-weight: 700;
-}
-
-.whatdo h1, .about h1, .phy h1 {
-  color: rgb(1, 24, 1);
-  text-align: center;
-  padding-top: 5vh;
-  font-size: 4.5vh;
-  font-weight: 700;
-}
-
-.bloks {
-  display: inline-block;
-  width: 32%;
-  border:solid black; 
-  padding: 1vw;
-  background-color: lightblue;
-  margin-left: 0.8vw;
-  margin-top: 1.5vw;
-  border-radius: 15px;
-  position: relative;
-  text-decoration: none;
-}
-
-.bloks :hover{
-  background-color: rgb(151, 228, 231);
-  text-decoration: none;
-  color:#000000
-}
-
-.center {
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .bloks {
-    width: 100%;
-  }
-}
-
 /* about */
 .about {
   display: block;
@@ -477,10 +254,24 @@ body {
 }
 
 .about p {
-  color: darkgreen;
+  color:#012a7e;
   text-align: center;
   font-size: 4.5vh;
   font-weight: 700;
+}
+
+.smals {
+  color:rgb(37, 3, 3);
+  font-weight: 100;
+  font-size: 3vh;
+  text-align: left;
+  font-style: italic;
+}
+
+.que {
+  font-size: 33vh;
+  text-align: center;
+  
 }
 
 .hide1, .hide2, .hide3, .hide4 {
@@ -495,6 +286,318 @@ body {
   width: 100%;
   }
 }
+
+/* needs */
+
+.needs {
+  display: block;
+  min-height: 100vh;
+  height: auto;
+  width: auto;
+  background-image: url(../img/gradient_to_right_latin_big.png);
+  background-size:     cover;                   
+  background-repeat:   no-repeat;
+  background-position: center; 
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 10vh;
+  padding-top:5vh;
+  margin: 10px;
+  opacity: 0.95;
+}
+
+.needstit {
+  display: block;
+  min-height: 100vh;
+  height: auto;
+  width: auto;
+  background-image: url(../img/gradient_to_right_latin_big.png);
+  background-size:     cover;                   
+  background-repeat:   no-repeat;
+  background-position: center; 
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 10vh;
+  padding-top:5vh;
+  margin: 10px;
+  opacity: 0.95;
+}
+
+.spontit {
+  display: block;
+  border: solid;
+  border-color: rgb(152, 141, 165);
+  background: #ffe8ca;
+  color: #6053b5;
+  padding-left: 2vw;
+  text-decoration: none;
+  box-shadow: 10px 15px 40px -10px rgba(#441125);
+  font-size: 5vh;
+  clip-path: polygon(1% 1%, 99% 0, 99% 93%, 92% 99%, 1% 100%, 0% 50%);
+  transform: skewY(1deg);
+  width: 54%;
+  height: auto;
+  z-index: 999;
+  margin-left: 25%;
+}
+
+.spontit:hover {
+  transform: skewY(0.5deg);
+}
+
+#needsr {
+  display: none;
+}
+
+#needsf {
+  display: none;
+}
+
+.needs {
+  display: none;
+}
+
+/* sponsors */
+
+.spon {
+  display: block;
+  min-height: 100vh;
+  height: auto;
+  width: auto;
+  background-image: url(../img/gradient_to_left_latin_big.png);
+  background-size: cover;                   
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding: 5vh;
+  padding-top:35vh;
+  margin: 10px;
+  opacity: 0.95;
+}
+
+.spon h1, .needs h1 {
+  text-align: right;
+  padding-right: 45%;
+  font-size: 4.5vh;
+  font-weight: 700;
+}
+
+.spon .button, .needs .button {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 2.5vh;
+  font-weight: 700;
+  color: rgb(87, 87, 87);
+  background-color: rgb(248, 248, 148);
+  border-radius: 5px;
+  width: auto;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  float: left;
+  
+}
+
+.spon1 {
+  display: block;
+  position:absolute;
+  border: solid;
+  border-color: rgb(18, 15, 22);
+  background:#ffe8ca;
+  color: #3a3636;
+  font-weight: 700;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 4vh;
+  clip-path: ellipse(50% 68% at 50% 50%);
+  transform: skewY(0deg);
+  float: left;
+  width: 45%;
+  text-align: center;
+  left:15%;
+  top: 27%;
+  z-index: 999;
+}
+
+.spon2 {
+  display: block;
+  position:absolute;
+  border: solid;
+  border-color: rgb(18, 15, 22);
+  background:#DFE0DF;
+  color: #3a3636;
+  font-weight: 700;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 4vh;
+  clip-path: ellipse(50% 68% at 50% 50%);
+  transform: skewY(1deg);
+  float: right;
+  width: 45%;
+  text-align: center;
+  left:40%;
+  top: 44%;
+}
+
+.spon3 {
+  display: block;
+  position:absolute;
+  border: solid;
+  border-color: rgb(18, 15, 22);
+  background: #ffe8ca;
+  color: #3a3636;
+  font-weight: 700;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 4vh;
+  clip-path: ellipse(50% 68% at 50% 50%);
+  transform: skewY(1deg);
+  float: right;
+  width: 45%;
+  text-align: center;
+  left:15%;
+  top: 60%;
+}
+
+.spon4 {
+  display: block;
+  position:absolute;
+  border: solid;
+  border-color: rgb(18, 15, 22);
+  background:#DFE0DF;
+  color: #3a3636;
+  font-weight: 700;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 4vh;
+  clip-path: ellipse(50% 68% at 50% 50%);
+  transform: skewY(-1deg);
+  float: right;
+  width: 45%;
+  text-align: center;
+  left:40%;
+  top: 77%;
+}
+
+.spon1:hover, .spon2:hover, .spon3:hover, .spon4:hover {
+  box-shadow: 10px 5px rgb(192, 129, 34);
+  cursor: pointer;
+  background: white
+}
+
+.spon button:hover, .needs button:hover {
+  cursor: pointer;
+  box-shadow:  0px 2px 5px 1px rgba(155, 155, 155, .5);
+  background:#DFE0DF;
+ }
+
+.spong {
+  color: darkgreen;
+  font-size: 3.5vh;
+  font-weight: 700;
+  margin-top: 10vh;
+  text-align: left;
+  padding-left: 2%;
+}
+
+#spong {
+  display: none;
+}
+
+#sponk {
+  display: none;
+}
+
+.spongline {
+  display: inline-block;
+  background:#68ddb2;
+  color: #2e1f1f;
+  font-weight: 700;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 4vh;
+  clip-path: ellipse(38% 35% at 50% 50%);
+  width: 46%;
+  text-align: center;
+  margin: 1%;
+}
+
+.spongline:hover{
+  box-shadow:  0px 2px 5px 1px rgba(155, 155, 155, .5);
+  text-decoration: none;
+  color:#000000;
+}
+
+@media (max-width: 768px) {
+  
+}
+
+/* what I do */
+.whatdo {
+  display: inline-block;
+  min-height: 100vh;
+  width: auto;
+  background: linear-gradient(90deg, rgb(235, 134, 40), rgb(236, 189, 145));
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 1vw;
+  margin: 10px;
+  opacity: 95%;
+} 
+
+.whatdo p {
+  color:#1c49a4;
+  text-align: left;
+  font-size: 2.5vh;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.whatdo h3 {
+  color:#1c49a4;
+  text-align: center;
+  padding-top: 1vh;
+  font-size: 4.5vh;
+  font-weight: 700;
+}
+
+.whatdo h1, .about h1 {
+  color: rgb(1, 24, 1);
+  text-align: center;
+  padding-top: 0.5vh;
+  font-size: 4.5vh;
+  font-weight: 700;
+}
+
+.bloks {
+  display: inline-block;
+  width: 32%;
+  border:solid black; 
+  padding: 1vw;
+  background-color: #ebd228;
+  margin-left: 0.8vw;
+  margin-top: 0.5vw;
+  border-radius: 15px;
+  position: relative;
+  text-decoration: none;
+}
+
+.bloks :hover{
+  background-color: #a1e263;
+  text-decoration: none;
+  color:#000000
+}
+
+.center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .bloks {
+    width: 100%;
+  }
+}
+
 
 /* phylosophy */
 .phy {
@@ -515,7 +618,7 @@ body {
 }
 
 .phy p {
-  color: darkgreen;
+  color: #012a7e;
   font-size: 3.5vh;
   font-weight: 700;
   text-align: center;
@@ -538,18 +641,32 @@ body {
 
 .aks {
   text-align: left;
-  background-color: #b9a443;
+  background-color: #4fe283;
   height: auto;
   width: auto;
   display: inline-block;
   margin-left: 35%;
   font-size: 4vh;
   font-weight: 700;
-  padding: 1%
+  padding: 1%;
+  border-radius: 10px;
 }
 
-.aks:hover {
-  background-color: #f7e396;
+.aks1 {
+  text-align: left;
+  background-color:#ebbf28;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  margin-left: 35%;
+  font-size: 3vh;
+  font-weight: 700;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.aks1:hover {
+  background-color:#e8eb28;
   border-radius: 10px;
   cursor: pointer;
   letter-spacing: 0.1px;
@@ -661,10 +778,6 @@ img {
   color: rgb(39, 30, 14);
   font-size: 3vh;
   background-color: #bfc93e;
-  /* margin-left: 7vw;
-  font-weight: 750;
-  padding: 5px;
-  border-radius: 5px; */
 }
 
 .menus {

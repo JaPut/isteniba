@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="fixed">
-        <a href="../index1.html"><i class="fa fa-home fa-lg" style="font-size:36px"></i></a></div>
+        <a href="../index.html"><i class="fa fa-home fa-lg" style="font-size:36px"></i></a></div>
     <div class="header">
         <p class="spin3">Kas notiek</p>
         <!-- Kas notiek -->
